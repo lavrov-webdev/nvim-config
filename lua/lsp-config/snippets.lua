@@ -49,7 +49,20 @@ const {}:FC<{}Props> = ({}) => {{
 
 export default {};
     ]], {
-      f(returnFileName), i(1, ""), f(returnFileName), f(returnFileName), i(2, "props"), i(3, "<div/>"), f(returnFileName)
+      f(returnFileName), i(1, ""), f(returnFileName), f(returnFileName), i(2, "props"), i(0, "<div/>"), f(returnFileName)
     })),
+    s("ue", fmt([[
+    useEffect(() => {{
+      {}
+    }}, [{}])
+    ]], {
+    i(1, "effect"), i(0, "deps")
+    }))
+  },
+  all = {
+    s('func', fmt([[const {} = () => {{
+      {}
+    }}]], { i(1, "funcName"), i(0, "body") })),
+    s('log', {t("console.log("), i(0), t(")")})
   }
 })
