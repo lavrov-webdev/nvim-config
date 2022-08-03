@@ -17,7 +17,7 @@ map('v', '<leader>p', '"*p', opts)
 map('n', '<S-j>', ':m .+1<CR>==', opts)
 map('n', '<S-k>', ':m -2<CR>', opts)
 map('v', '<S-j>', ":m '>+1<CR>gv=gv", opts)
-map('v', '<S-k>', ":m '<-2<CR>", opts)
+map('v', '<S-k>', ":m '<-2<CR>gv=gv", opts)
 
 --New line in normal mode
 map('n', '<leader>o', 'o<Esc>', opts)
