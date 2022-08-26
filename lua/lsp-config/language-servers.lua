@@ -33,5 +33,19 @@ require('lspconfig')['tsserver'].setup{
     flags = lsp_flags,
     capabilities = capabilities,
 }
-
-
+require('lspconfig')['html'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
+}
+require('lspconfig')['cssls'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
+}
+require('lspconfig')['emmet_ls'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+    capabilities = capabilities,
+    filetypes = { "html", "css", "sass", "scss", "less" }
+}

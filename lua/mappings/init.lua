@@ -13,6 +13,9 @@ map('n', '<c-l>', ':wincmd l<CR>', opts)
 map('v', '<leader>y', '"*y', opts)
 map('v', '<leader>p', '"*p', opts)
 
+--Do not copy in unnamed buffer
+map('v', '<leader>p', '"_dP', opts)
+
 --Moving lines
 map('n', '<S-j>', ':m .+1<CR>==', opts)
 map('n', '<S-k>', ':m -2<CR>', opts)
