@@ -19,3 +19,4 @@ set.splitright = true
 set.wrap = false
 
 set.hidden = true
+vim.o.swapfile = false
